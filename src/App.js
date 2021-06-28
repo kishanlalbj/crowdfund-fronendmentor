@@ -1,11 +1,11 @@
 import React from 'react';
+import Home from './screens/Home/Home.js';
 import './App.css';
 
 const App = () => {
   return (
     <div className='App'>
-      <h1>Hello World</h1>
-      <h3>Date : {new Date().toDateString()}</h3>
+      <Home></Home>
     </div>
   );
 };

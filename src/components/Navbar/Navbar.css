@@ -1,0 +1,21 @@
+.navbar {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.nav-item a {
+  font-size: 13px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ffff;
+}

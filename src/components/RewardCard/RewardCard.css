@@ -1,0 +1,40 @@
+.reward-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reward-pledge-text {
+  color: #3cb3ab;
+  font-size: 14px;
+}
+.reward-pledge-text-disabled {
+  color: #3cb3ab80;
+  font-size: 14px;
+}
+
+.reward-body-text {
+  line-height: 30px;
+  color: #7a7a7a;
+}
+
+.reward-body-text-disabled {
+  line-height: 30px;
+  color: #7a7a7a47;
+}
+
+.reward-footer {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reward-left-number {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.disabled {
+  color: #7a7a7a47;
+}
