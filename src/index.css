@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  margin: 0 11.5%;
+  margin: 0 25%;
 }
 
 .card {
@@ -44,4 +44,10 @@ body {
 
 .btn:hover:enabled {
   background: #147a73;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    margin: 0 5%;
+  }
 }

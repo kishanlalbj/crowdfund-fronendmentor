@@ -13,9 +13,9 @@
   border-right: 2px solid #f2f2f2;
 }
 
-.stats-container {
+/* .stats-container {
   width: 100%;
-}
+} */
 
 .stat-data {
   font-size: xx-large;
@@ -45,4 +45,17 @@
 
 .meter-container {
   padding-top: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .stats-list-container div:not(:last-child) {
+    border-right: none;
+    margin-top: 30px;
+    border-bottom: 2px solid #f2f2f2;
+  }
+
+  .stats-list-container {
+    display: block;
+    text-align: center;
+  }
 }

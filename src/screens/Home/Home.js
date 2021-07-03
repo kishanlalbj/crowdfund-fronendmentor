@@ -7,23 +7,11 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <div>
-      <div className='hero-container'>
-        <img
-          src='/public/images/image-hero-desktop.jpg'
-          width='100%'
-          draggable={false}
-        ></img>
+    <div className='home-container'>
+      <Navbar></Navbar>
 
-        <div className='hero-box'>
-          <div className='container'>
-            <Navbar></Navbar>
-          </div>
-        </div>
-      </div>
-
-      <div className='container'>
-        <div className='contents'>
+      <div className='contents'>
+        <div className='container'>
           <ProjectCard></ProjectCard>
           <br></br>
           <Stats></Stats>
