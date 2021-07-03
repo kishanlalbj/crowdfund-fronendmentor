@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+  console.log('----------');
+  const [open, setOpen] = useState(true);
+
+  const showResponsiveModal = () => {
+    setOpen((open) => !open);
+  };
+
   return (
     <>
       <div className='hero-container'>
@@ -16,7 +23,8 @@ const Navbar = () => {
                 draggable={false}
               ></img>
             </a>
-            <div className='nav-list'>
+
+            <nav>
               <ul>
                 <li className='nav-item'>
                   <a href='#' className='nav-link'>
@@ -31,20 +39,68 @@ const Navbar = () => {
                 </li>
 
                 <li className='nav-item'>
-                  <a href='#' className='nav-link'>
+                  <a
+                    href='#'
+                    className='nav-link'
+                    onClick={() => alert('Hello')}
+                  >
                     Get Started
                   </a>
                 </li>
               </ul>
-            </div>
-            <input type='checkbox' id='menu-btn' />
-            <label for='menu-btn' className='menu-label'>
-              <div className='hamburger'>
-                <img src='/public/images/icon-hamburger.svg'></img>
+            </nav>
+
+            {open ? (
+              <div className='nav-modal'>
+                <div className='nav-modal-container'>
+                  <div className='nav-modal-body'>
+                    <ul>
+                      <li>
+                        <a href='/'> About </a>
+                      </li>
+
+                      <li>
+                        <a href='/'> Discover </a>
+                      </li>
+
+                      <li>
+                        <a href='/'> Get Started </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </label>
+            ) : null}
+
+            <div className='hamburger' onClick={() => showResponsiveModal()}>
+              {open ? (
+                <img
+                  src='/public/images/icon-close-menu.svg'
+                  alt='close-icon'
+                ></img>
+              ) : (
+                <img
+                  src='/public/images/icon-hamburger.svg'
+                  alt='ham-icon'
+                ></img>
+              )}
+            </div>
           </div>
         </div>
+
+        {/* {open ? (
+          <div className='nav-modal'>
+            <div className='nav-modal-container'>
+              <div className='nav-modal-body'>
+                <ul>
+                  <li>
+                    <a href='/'> Home </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        ) : null} */}
       </div>
     </>
   );

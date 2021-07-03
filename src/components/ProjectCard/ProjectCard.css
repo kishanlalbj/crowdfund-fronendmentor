@@ -33,7 +33,7 @@
   justify-content: space-between;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 426px) {
+@media only screen and (max-width: 475px) {
   .project-hero-actions {
     flex-wrap: wrap;
     justify-content: center;

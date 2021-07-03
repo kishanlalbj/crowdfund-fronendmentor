@@ -3,7 +3,6 @@ import './RewardCard.css';
 
 const RewardCard = (props) => {
   const { title, pledgeAmount, description, rewardLeft, outOfStock } = props;
-  console.log('-----');
   return (
     <div className={`card-outline ${outOfStock ? 'disabled' : null}`}>
       <div className='reward-header'>
