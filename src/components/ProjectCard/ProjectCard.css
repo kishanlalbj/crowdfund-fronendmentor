@@ -33,6 +33,34 @@
   justify-content: space-between;
 }
 
+.back-project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-project-modal-body {
+  height: 40vh;
+  background: #fff;
+  width: 50%;
+}
+
+.back-project-modal-header img {
+  cursor: pointer;
+  float: right;
+}
+
+.back-project-modal p {
+  color: #727272;
+}
+
 @media only screen and (max-width: 475px) {
   .project-hero-actions {
     flex-wrap: wrap;
@@ -42,4 +70,15 @@
   .project-hero-actions button:nth-child(even) {
     margin-top: 20px;
   }
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #b1b1b169;
+  background: #b1b1b169;
+  border-radius: 30px;
+  width: 150px;
+  font-weight: 700;
 }

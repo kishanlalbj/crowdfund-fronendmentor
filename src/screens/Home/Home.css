@@ -9,10 +9,6 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .contents {
-    /* position: none; */
-    all: unset;
-  }
   .hero-container {
     background: url(/public/images/image-hero-mobile.jpg);
     background-size: cover;

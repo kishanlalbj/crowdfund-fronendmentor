@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
-  console.log('----------');
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const showResponsiveModal = () => {
     setOpen((open) => !open);
