@@ -1,5 +1,6 @@
 import React from 'react';
 import RewardCardRadio from '../RewardCardRadio/RewardCardRadio';
+import closeModal from '../../../public/images/icon-close-modal.svg';
 
 const RewardsModal = (props) => {
   const {
@@ -15,7 +16,7 @@ const RewardsModal = (props) => {
       <div className='back-project-modal-body card '>
         <div className='back-project-modal-header'>
           <img
-            src='/public/images/icon-close-modal.svg'
+            src={closeModal}
             alt='modal-close'
             width='15'
             height='15'
