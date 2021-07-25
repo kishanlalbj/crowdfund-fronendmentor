@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import logo from '../../../public/images/logo.svg';
+import close from '../../../public/images/icon-close-menu.svg';
+import hamburger from '../../../public/images/icon-hamburger.svg';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -15,7 +18,7 @@ const Navbar = () => {
           <div className='navbar navbar-container'>
             <a href='#'>
               <img
-                src='/public/images/logo.svg'
+                src={logo}
                 alt='logo'
                 width='100%'
                 height='100%'
@@ -73,33 +76,13 @@ const Navbar = () => {
 
             <div className='hamburger' onClick={() => showResponsiveModal()}>
               {open ? (
-                <img
-                  src='/public/images/icon-close-menu.svg'
-                  alt='close-icon'
-                ></img>
+                <img src={close} alt='close-icon'></img>
               ) : (
-                <img
-                  src='/public/images/icon-hamburger.svg'
-                  alt='ham-icon'
-                ></img>
+                <img src={hamburger} alt='ham-icon'></img>
               )}
             </div>
           </div>
         </div>
-
-        {/* {open ? (
-          <div className='nav-modal'>
-            <div className='nav-modal-container'>
-              <div className='nav-modal-body'>
-                <ul>
-                  <li>
-                    <a href='/'> Home </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        ) : null} */}
       </div>
     </>
   );

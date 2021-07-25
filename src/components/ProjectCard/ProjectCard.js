@@ -1,6 +1,9 @@
 import React from 'react';
 import RewardsModal from '../RewardsModal/RewardsModal';
 import SuccessModal from '../SuccessModal/SuccessModal';
+import mastercraft from '../../../public/images/logo-mastercraft.svg';
+import bookmarkIcon from '../../../public/images/icon-bookmark.svg';
+import bookmarkedIcon from '../../../public/images/icon-bookmarked.svg';
 import './ProjectCard.css';
 
 const ProjectCard = () => {
@@ -67,11 +70,7 @@ const ProjectCard = () => {
     <div className='project-hero'>
       <div className='card'>
         <span className='project-logo'>
-          <img
-            src='/public/images/logo-mastercraft.svg'
-            alt='project_logo'
-            draggable={false}
-          ></img>
+          <img src={mastercraft} alt='project_logo' draggable={false}></img>
         </span>
         <div className='project-hero-header'>
           <span>Mastercraft Bamboo Monitor Riser</span>
@@ -88,7 +87,7 @@ const ProjectCard = () => {
             {!bookmark ? (
               <>
                 <img
-                  src='/public/images/icon-bookmark.svg'
+                  src={bookmarkIcon}
                   alt='bookmark-icon'
                   width='60'
                   height='60'
@@ -102,7 +101,7 @@ const ProjectCard = () => {
             ) : (
               <>
                 <img
-                  src='/public/images/icon-bookmarked.svg'
+                  src={bookmarkedIcon}
                   alt='bookmark-icon'
                   width='60'
                   height='60'

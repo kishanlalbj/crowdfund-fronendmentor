@@ -1,4 +1,5 @@
 import React from 'react';
+import check from '../../../public/images/icon-check.svg';
 import './SuccessModal.css';
 
 const SuccessModal = (props) => {
@@ -7,7 +8,7 @@ const SuccessModal = (props) => {
   return (
     <div className='success-modal-container'>
       <div className='success-modal-body'>
-        <img src='/public/images/icon-check.svg' alt='check'></img>
+        <img src={check} alt='check'></img>
 
         <p className='success-modal-title'>Thanks for your Support</p>
 
