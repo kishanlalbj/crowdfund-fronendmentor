@@ -4,7 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   output: {
-    publicPath: path.join(__dirname, '/public'),
     path: path.join(__dirname, '/dist'),
     filename: 'bundle.js'
   },
@@ -26,7 +25,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
-        test: /\.(png|jpg|svg|jpeg)$/,
+        test: /\.(png|jpg|jpeg)$/,
         use: {
           loader: 'file-loader'
         }
