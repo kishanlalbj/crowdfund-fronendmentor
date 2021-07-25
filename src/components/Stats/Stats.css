@@ -58,4 +58,8 @@
     display: block;
     text-align: center;
   }
+
+  .stats-list-container div:not(:last-child) {
+    padding-bottom: 20px;
+  }
 }

@@ -3,6 +3,7 @@ import './RewardCard.css';
 
 const RewardCard = (props) => {
   const { title, pledgeAmount, description, rewardLeft, outOfStock } = props;
+
   return (
     <div className={`card-outline ${outOfStock ? 'disabled' : null}`}>
       <div className='reward-header'>
@@ -32,7 +33,7 @@ const RewardCard = (props) => {
           <span>left </span>
         </div>
         <div>
-          <button className='btn' disabled={outOfStock}>
+          <button className='btn' disabled={outOfStock} onClick={() => {}}>
             {!outOfStock ? 'Select Reward' : 'Out Of Stock'}
           </button>
         </div>

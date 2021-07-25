@@ -47,9 +47,10 @@
 }
 
 .back-project-modal-body {
-  height: 40vh;
   background: #fff;
   width: 50%;
+  height: 80vh;
+  overflow-y: auto;
 }
 
 .back-project-modal-header img {
@@ -61,6 +62,17 @@
   color: #727272;
 }
 
+.reward-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reward-card-container label {
+  width: 100%;
+  margin: 10px;
+}
+
 @media only screen and (max-width: 475px) {
   .project-hero-actions {
     flex-wrap: wrap;
@@ -70,15 +82,40 @@
   .project-hero-actions button:nth-child(even) {
     margin-top: 20px;
   }
+
+  .bookmark-logo {
+    top: 270px;
+  }
+
+  .back-project-modal-body {
+    width: 65%;
+  }
 }
 
-.chip {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #b1b1b169;
-  background: #b1b1b169;
-  border-radius: 30px;
-  width: 150px;
+.bookmark-btn {
+  display: block;
+  width: 190px;
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  position: relative;
+  font-family: 'Commisioner', sans-serif;
+  font-size: 16px;
+  color: hsl(0, 0%, 52%);
   font-weight: 700;
+  text-align: right;
+  cursor: pointer;
+}
+
+.bookmarked-btn {
+  color: #3cb3ab;
+}
+
+.bookmark-logo {
+  position: absolute;
+  z-index: 999;
+}
+
+.bookmark-logo .circle {
+  color: #3cb3ab;
 }

@@ -1,0 +1,130 @@
+.radio {
+  background: #fff;
+  height: 25px;
+  width: 25px;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+.radio::after {
+  border: 1px solid rgb(214, 50, 50);
+  border-top: 0;
+  border-left: 0;
+}
+
+.radio:checked {
+  background: #3cb3ab;
+}
+
+.radio:disabled {
+  background: #fff;
+  cursor: not-allowed;
+}
+
+.radio:checked ~ .card-outline {
+  border: 1px solid #3cb3ab;
+}
+
+.reward-container {
+  display: flex;
+}
+
+.reward-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.reward-card-title {
+  margin: 0;
+  font-family: 'Commissioner', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+.reward-minimum-pledge {
+  color: #3cb3ab;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.reward-stock-left {
+  font-weight: 700;
+}
+.reward-radio-description {
+  font-family: 'Commissioner', sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  color: #7a7a7a;
+}
+
+.reward-radio-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pledge-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.dollar-sign {
+  position: absolute;
+  left: 15px;
+  font-weight: 700;
+  color: #979797;
+  font-size: 14px;
+}
+
+.pledge-input {
+  border-radius: 30px;
+  padding: 15px;
+  border: 1px solid #979797;
+  padding-left: 30px;
+  width: 70px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.pledge-input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 475px) {
+  .reward-card-header {
+    width: 100%;
+  }
+
+  .reward-stock-left-container {
+    display: none;
+  }
+
+  .reward-stock-left-container-mobile {
+    display: block;
+  }
+
+  .reward-radio-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 476px) and (max-width: 1920px) {
+  .reward-stock-left-container-mobile {
+    display: none;
+  }
+}
