@@ -6,6 +6,7 @@
 
 .stats-list-container div {
   width: 100%;
+  text-align: center;
 }
 
 .stats-list-container div:not(:last-child) {
