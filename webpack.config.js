@@ -21,22 +21,19 @@ module.exports = {
         }
       },
       {
-        test: /\.css/,
+        test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
-        test: /\.(png|jpg|jpeg)$/,
+        test: /\.svg$/,
         use: {
-          loader: 'file-loader'
+          loader: 'url-loader'
         }
       },
       {
-        test: /\.svg/,
+        test: /\.(png|jpg|svg|jpeg)$/,
         use: {
-          loader: 'svg-url-loader',
-          options: {
-            limit: 10000
-          }
+          loader: 'url-loader'
         }
       }
     ]
